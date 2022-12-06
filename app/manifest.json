@@ -2,7 +2,8 @@
     "name": "Website Tracker",
     "description": "Track the time spent on website",
     "version": "1.0.0",
-    "permissions": ["contextMenus", "activeTab", "storage","tabs", "<all_urls>"],
+    "__chrome__permissions": ["contextMenus", "activeTab", "storage","tabs"],
+    "__firefox__permissions":["contextMenus","activeTab", "storage","<all_urls>"],
     "background": {
       "scripts": ["background.js"]
     },
@@ -13,6 +14,8 @@
       "48": "images/icons/48x48/apps/48.JPG",
       "128": "images/icons/128x128/apps/128.JPG"
     },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "__chrome__options_page": "pages/settings.html",
     "browser_action":{
         "default_icon":"images/icons/48x48/apps/48.JPG",
         "default_title":"Website Tracker",

@@ -1,0 +1,14 @@
+{
+    "appName": {
+      "message": "Website Tracker",
+      "description": "The name of the application"
+    },
+    "appShortName": {
+      "message": "Website Tracker",
+      "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+    },
+    "appDescription": {
+      "message": "This is a tracker extension for calculating time spend on a website.",
+      "description": "The description of the application"
+    }
+  }
