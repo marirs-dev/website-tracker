@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Vuerify from "vuetify";
-import Settings from "../pages/settings.vue"
+import Popup from "../pages/popup.vue"
 import 'vuetify/dist/vuetify.css'
-import '../styles/settings.css';
+import '../styles/popup.css';
 
-function initSettings() {
+function initPopup() {
     try {
         initVue();
     } catch (e) {
@@ -16,8 +16,8 @@ function initVue() {
     Vue.use(Vuerify, {});
     new Vue({
         el: "#app",
-        render:(h)=>h(Settings)
+        render:(h)=>h(Popup)
     })
 }
 
-initSettings();
+initPopup();

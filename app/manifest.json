@@ -2,10 +2,11 @@
     "name": "Website Tracker",
     "description": "Track the time spent on website",
     "version": "1.0.0",
+    "default_locale":"en",
     "__chrome__permissions": ["contextMenus", "activeTab", "storage","tabs"],
     "__firefox__permissions":["contextMenus","activeTab", "storage","<all_urls>"],
     "background": {
-      "scripts": ["background.js"]
+      "scripts": ["scripts/background.js"]
     },
     "manifest_version": 2,
     "icons": {
@@ -16,9 +17,14 @@
     },
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "__chrome__options_page": "pages/settings.html",
+    "options_ui":{
+      "page":"pages/settings.html",
+      "open_in_tab":false,
+      "chrome_style":true
+    },
     "browser_action":{
         "default_icon":"images/icons/48x48/apps/48.JPG",
         "default_title":"Website Tracker",
-        "default_popup":"popup/popup.html"
+        "default_popup":"pages/popup.html"
     }
   }
