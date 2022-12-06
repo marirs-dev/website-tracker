@@ -1,0 +1,16 @@
+{
+    "name": "Website Tracker",
+    "description": "Track the time spent on website",
+    "version": "1.0.0",
+    "permissions": ["contextMenus", "activeTab", "storage","tabs"],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "manifest_version": 2,
+    "icons": {
+      "16": "images/icons/16x16/apps/16.JPG",
+      "32": "images/icons/32x32/apps/32.JPG",
+      "48": "images/icons/48x48/apps/48.JPG",
+      "128": "images/icons/128x128/apps/128.JPG"
+    }
+  }
